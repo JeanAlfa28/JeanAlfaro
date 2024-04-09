@@ -1,0 +1,221 @@
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~
+$ cd C:/Users/jean.carlo.alfaro/Desktop/UPI/Reingenieria/TareaGit
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit
+$ git init
+Initialized empty Git repository in C:/Users/jean.carlo.alfaro/Desktop/UPI/Reingenieria/TareaGit/.git/
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git config user.name "JeanAlfaro"
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git config user.email "jeanalfaroramirez@gmail.com"
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git remote add origin "https://github.com/JeanAlfa28/JeanAlfaro.git"
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Tienda.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git add Tienda.html
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Tienda.html
+
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git commit -m "9/04/2024 Version1"
+[master (root-commit) 471b51d] 9/04/2024 Version1
+ 1 file changed, 68 insertions(+)
+ create mode 100644 Tienda.html
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 883 bytes | 883.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/JeanAlfa28/JeanAlfaro.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ ^C
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git branch
+* master
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git branch Rama2
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git branch
+  Rama2
+* master
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git checkout Rama2
+Switched to branch 'Rama2'
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (Rama2)
+$ git branch
+* Rama2
+  master
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (Rama2)
+$ touch "tiendaAnime.html"
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (Rama2)
+$ git add .
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (Rama2)
+$ git commit -m "9/4/2024 version1 en Rama2"
+[Rama2 be7f1bc] 9/4/2024 version1 en Rama2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 tiendaAnime.html
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (Rama2)
+$ git diff master Rama2
+diff --git a/tiendaAnime.html b/tiendaAnime.html
+new file mode 100644
+index 0000000..e69de29
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (Rama2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git merge Rama2 master
+Updating 471b51d..be7f1bc
+Fast-forward
+ tiendaAnime.html | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 tiendaAnime.html
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git add .
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git commit -m "9/4/2024 MERGE de Rama2 a Master"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 295 bytes | 295.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/JeanAlfa28/JeanAlfaro.git
+   471b51d..be7f1bc  master -> master
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git checkout Rama2
+Switched to branch 'Rama2'
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (Rama2)
+$ git push
+fatal: The current branch Rama2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Rama2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (Rama2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git branch -d Rama2
+Deleted branch Rama2 (was be7f1bc).
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Pasos de la tarea/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git add .
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Pasos de la tarea/Clone -5.png
+        new file:   Pasos de la tarea/Crear Rama2 -6.png
+        new file:   Pasos de la tarea/Eliminar Rama2 -10.png
+        new file:   Pasos de la tarea/Repositorio Local -1.png
+        new file:   Pasos de la tarea/commit y push v1 -4.png
+        new file:   Pasos de la tarea/config UserEmail -2.png
+        new file:   Pasos de la tarea/crear HTML en rama2 -7.png
+        new file:   Pasos de la tarea/diferencia de archivos en ramas -8.png
+        new file:   Pasos de la tarea/local a remoto -3.png
+        new file:   Pasos de la tarea/merge -9.png
+
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git commit -m "9/4/2024 Commit Final Pasos de la tarea"
+[master f09e9b7] 9/4/2024 Commit Final Pasos de la tarea
+ 10 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Pasos de la tarea/Clone -5.png
+ create mode 100644 Pasos de la tarea/Crear Rama2 -6.png
+ create mode 100644 Pasos de la tarea/Eliminar Rama2 -10.png
+ create mode 100644 Pasos de la tarea/Repositorio Local -1.png
+ create mode 100644 Pasos de la tarea/commit y push v1 -4.png
+ create mode 100644 Pasos de la tarea/config UserEmail -2.png
+ create mode 100644 Pasos de la tarea/crear HTML en rama2 -7.png
+ create mode 100644 Pasos de la tarea/diferencia de archivos en ramas -8.png
+ create mode 100644 Pasos de la tarea/local a remoto -3.png
+ create mode 100644 Pasos de la tarea/merge -9.png
+
+jean.carlo.alfaro@cgr200310 MINGW64 ~/Desktop/UPI/Reingenieria/TareaGit (master)
+$ git push -u origin master
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 281.78 KiB | 17.61 MiB/s, done.
+Total 13 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/JeanAlfa28/JeanAlfaro.git
+   be7f1bc..f09e9b7  master -> master
+branch 'master' set up to track 'origin/master'.
